@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../models/movie.dart';
 import '../models/movie_detail.dart';
 import '../models/movie_list.dart';
 import 'movie_detail_section.dart';
@@ -31,14 +30,6 @@ class _MovieDescriptionState extends State<MovieDescription> {
     ).loadDetailMovie(widget.movie.id).then((value) {
       setState(() => _isLoading = false);
     });
-  }
-
-  Future<void> _refreshPage(BuildContext context) {
-    setState(() => _isLoading = true);
-    return Provider.of<MovieList>(context, listen: false)
-        .loadDetailMovie(widget.movie.id).then((value) {
-          setState(() => _isLoading = false);
-        });
   }
 
   @override

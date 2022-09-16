@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 
 import '../components/movie_header.dart';
 import '../components/movie_description.dart';
 import '../models/movie.dart';
-import '../models/movie_list.dart';
 
 class MovieDetailPage extends StatelessWidget {
   @override

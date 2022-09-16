@@ -13,7 +13,6 @@ class MoviesPage extends StatefulWidget {
 
 class _MoviesPageState extends State<MoviesPage> {
   bool _isLoading = true;
-  bool hasError = false;
 
   @override
   void initState() {

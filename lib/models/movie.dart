@@ -7,7 +7,6 @@ class Movie with ChangeNotifier {
   final String posterUrl;
   final List<dynamic> genres;
   final String releaseDate;
-  final Map<String, dynamic> detail;
 
   Movie({
     required this.id,
@@ -16,6 +15,5 @@ class Movie with ChangeNotifier {
     required this.posterUrl,
     required this.genres,
     required this.releaseDate,
-    required this.detail,
   });
 }
